@@ -1,23 +1,73 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: forestgreen;
+}
+
+.jumboScreen {
+  background-color: black;
+  color: yellow;
+  width: 300px;
+  text-align: center;
+
+  height: 100px;
+
+  border-radius: 15px;
+  border: 2px solid grey;
+  margin: 1em;
+}
+
+.jumboScreenText {
+  background-color: transparent;
+  color: yellow;
+  text-shadow: 0 0 10px yellow, 0 0 20px yellow, 0 0 30px yellow;
+  padding: 1em;
 }
 
 .teamsPlaying {
   display: flex;
-}
-
-.homeTeam,
-.awayTeam {
-  margin: 1em;
+  justify-content: space-evenly;
+  width: 300px;
+  color: white;
+  height: 50px;
+  align-items: center;
+  background-color: black;
+  border: solid grey 1px;
+  border-width: 1px 2px 1px 2px;
+  padding: 0.5em;
 }
 
 .teamScores {
   display: flex;
+  justify-content: space-evenly;
+  width: 300px;
+  color: red;
+  font-size: xx-large;
+  background-color: black;
+  border: solid grey 1px;
+  border-width: 1px 2px 1px 2px;
+  padding: 0.5em;
 }
 
-.homeScore,
-.awayScore {
-  margin: 2.5em;
+.btnReset,
+.play {
+  width: 50px;
+  height: 25px;
+  border-radius: 5px;
+  border: none;
+  margin: 3px;
+}
+
+.btnReset {
+  background-color: yellow;
+}
+
+.play {
+  background-color: greenyellow;
 }
